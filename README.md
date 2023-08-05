@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Git repo](https://your-solution-url.com)
-- Live Site URL: [Netlify link](https://your-live-site-url.com)
+- Solution URL: [Git repo](https://github.com/Plut0r/planets-fun-site)
+- Live Site URL: [Deployp link](https://your-live-site-url.com)
 
 
 ### Built with

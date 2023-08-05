@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const antonio = Antonio({ subsets: ["latin"] });
 export const league_spartan = League_Spartan({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Planets Fun Site",
   description: "An 8-page fact site for all planets in our solar system.",
 };

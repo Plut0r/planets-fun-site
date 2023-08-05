@@ -150,7 +150,6 @@ function Planet() {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                priority={true}
               />
             )}
             {tab === 2 && (

@@ -74,7 +74,6 @@ export default function Home() {
                   alt="mercury_planet"
                   width={18.125 * 16}
                   height={18.125 * 16}
-                  priority={true}
                 />
               )}
               {tab === 2 && (

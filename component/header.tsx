@@ -82,7 +82,6 @@ function Header() {
               key={item.id}
               href={item.path}
               className={`${league_spartan.className} text-[0.6875rem] lg:text-[0.9rem] font-bold leading-[1.5625rem] tracking-[0.0625rem] uppercase opacity-[0.75] hover:opacity-100`}
-              rel="preload"
             >
               {item.name}
             </Link>
@@ -137,21 +136,18 @@ function Header() {
             <motion.div className="w-full h-[0.0625rem] bg-white opacity-20"></motion.div>
             <motion.div className="mt-10 container flex flex-col gap-5">
               {nav.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex items-center justify-between border-b border-b-[rgb(255,255,255,0.2)] pb-5"
-                >
-                  <div className="flex items-center gap-5">
-                    <div
-                      className={`${item.bg} w-[1.25rem] h-[1.25rem] rounded-full`}
-                    ></div>
-                    <h2
-                      className={`${league_spartan.className} text-[0.9375rem] font-bold uppercase tracking-[0.08525rem]`}
-                    >
-                      {item.name}
-                    </h2>
-                  </div>
-                  <Link href={item.path} rel="preload">
+                <Link key={item.id} href={item.path}>
+                  <div className="flex items-center justify-between border-b border-b-[rgb(255,255,255,0.2)] pb-5">
+                    <div className="flex items-center gap-5">
+                      <div
+                        className={`${item.bg} w-[1.25rem] h-[1.25rem] rounded-full`}
+                      ></div>
+                      <h2
+                        className={`${league_spartan.className} text-[0.9375rem] font-bold uppercase tracking-[0.08525rem]`}
+                      >
+                        {item.name}
+                      </h2>
+                    </div>
                     <div>
                       <Image
                         src="/assets/icon-chevron.svg"
@@ -160,8 +156,8 @@ function Header() {
                         height={0.5 * 16}
                       />
                     </div>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
             </motion.div>
           </motion.div>

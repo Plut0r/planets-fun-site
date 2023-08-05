@@ -44,7 +44,7 @@ function Planet() {
         width: 17.8125 * 16,
         height: 17.8125 * 16,
         color: "bg-[#6D2ED5]",
-        border: "border-b-[#6D2ED5]"
+        border: "border-b-[#6D2ED5]",
       }));
     } else if (params?.planet === "mars") {
       setImage((prev) => ({
@@ -53,7 +53,7 @@ function Planet() {
         width: 13.3125 * 16,
         height: 13.3125 * 16,
         color: "bg-[#D14C32]",
-        border: "border-b-[#D14C32]"
+        border: "border-b-[#D14C32]",
       }));
     } else if (params?.planet === "jupiter") {
       setImage((prev) => ({
@@ -62,7 +62,7 @@ function Planet() {
         width: 23.0625 * 16,
         height: 23.0625 * 16,
         color: "bg-[#D83A34]",
-        border: "border-b-[#D83A34]"
+        border: "border-b-[#D83A34]",
       }));
     } else if (params?.planet === "saturn") {
       setImage((prev) => ({
@@ -71,7 +71,7 @@ function Planet() {
         width: 26.375 * 16,
         height: 26.375 * 16,
         color: "bg-[#CD5120]",
-        border: "border-b-[#CD5120]"
+        border: "border-b-[#CD5120]",
       }));
     } else if (params?.planet === "uranus") {
       setImage((prev) => ({
@@ -80,7 +80,7 @@ function Planet() {
         width: 18.125 * 16,
         height: 18.125 * 16,
         color: "bg-[#1EC1A2]",
-        border: "border-b-[#1EC1A2]"
+        border: "border-b-[#1EC1A2]",
       }));
     } else if (params?.planet === "neptune") {
       setImage((prev) => ({
@@ -89,7 +89,7 @@ function Planet() {
         width: 17.8125 * 16,
         height: 17.8125 * 16,
         color: "bg-[#2D68F0]",
-        border: "border-b-[#2D68F0]"
+        border: "border-b-[#2D68F0]",
       }));
     }
   }, [params?.planet]);
@@ -138,7 +138,11 @@ function Planet() {
         <div className="w-full h-[0.0625rem] bg-[rgba(255,255,255,0.2)]"></div>
       </div>
       <div className="container mt-28 lg:mt-24">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-20 md:gap-32 lg:gap-60" data-aos="fade-up" data-aos-duration="2000">
+        <div
+          className="flex flex-col lg:flex-row justify-center items-center gap-20 md:gap-32 lg:gap-60"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <div className="shrink-0">
             {tab === 1 && (
               <Image
@@ -146,14 +150,19 @@ function Planet() {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
+                priority={true}
               />
             )}
             {tab === 2 && (
               <Image
-                src={planet?.images?.internal ?? "/assets/planet-mercury-internal.svg"}
+                src={
+                  planet?.images?.internal ??
+                  "/assets/planet-mercury-internal.svg"
+                }
                 alt={`${image.alt}_internal`}
                 width={image.width}
                 height={image.height}
+                priority={true}
               />
             )}
             {tab === 3 && (
@@ -169,7 +178,10 @@ function Planet() {
                   alt={`${image.alt}_geology`}
                   width={10.1875 * 16}
                   height={12.4375 * 16}
-                  className={`${planet?.name === "saturn" ? "-mt-32" : "-mt-16"}`}
+                  className={`${
+                    planet?.name === "saturn" ? "-mt-32" : "-mt-16"
+                  }`}
+                  priority={true}
                 />
               </div>
             )}

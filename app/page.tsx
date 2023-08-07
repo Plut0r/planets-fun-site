@@ -97,6 +97,9 @@ export default function Home() {
                     alt="mercury_planet_geology"
                     width={18.125 * 16}
                     height={18.125 * 16}
+                    priority
+                    data-aos="fade-down"
+                    data-aos-duration="2000"
                   />
                   <Image
                     src="/assets/geology-mercury.png"

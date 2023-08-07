@@ -176,6 +176,9 @@ function Planet() {
                   alt={image.alt}
                   width={image.width}
                   height={image.height}
+                  priority
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
                 />
                 <Image
                   src={planet?.images?.geology ?? "/assets/geology-mercury.png"}

@@ -74,6 +74,7 @@ export default function Home() {
                   alt="mercury_planet"
                   width={18.125 * 16}
                   height={18.125 * 16}
+                  priority
                 />
               )}
               {tab === 2 && (
@@ -82,7 +83,7 @@ export default function Home() {
                   alt="mercury_planet_internal"
                   width={18.125 * 16}
                   height={18.125 * 16}
-                  priority={true}
+                  priority
                 />
               )}
               {tab === 3 && (
@@ -99,7 +100,7 @@ export default function Home() {
                     width={10.1875 * 16}
                     height={12.4375 * 16}
                     className="-mt-16"
-                    priority={true}
+                    priority
                   />
                 </div>
               )}

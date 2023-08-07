@@ -75,6 +75,8 @@ export default function Home() {
                   width={18.125 * 16}
                   height={18.125 * 16}
                   priority
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
                 />
               )}
               {tab === 2 && (
@@ -84,6 +86,8 @@ export default function Home() {
                   width={18.125 * 16}
                   height={18.125 * 16}
                   priority
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
                 />
               )}
               {tab === 3 && (
@@ -101,6 +105,8 @@ export default function Home() {
                     height={12.4375 * 16}
                     className="-mt-16"
                     priority
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
                   />
                 </div>
               )}

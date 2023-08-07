@@ -150,6 +150,9 @@ function Planet() {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
+                priority
+                data-aos="fade-up"
+                data-aos-duration="2000"
               />
             )}
             {tab === 2 && (
@@ -161,7 +164,9 @@ function Planet() {
                 alt={`${image.alt}_internal`}
                 width={image.width}
                 height={image.height}
-                priority={true}
+                priority
+                data-aos="fade-up"
+                data-aos-duration="2000"
               />
             )}
             {tab === 3 && (
@@ -178,9 +183,11 @@ function Planet() {
                   width={10.1875 * 16}
                   height={12.4375 * 16}
                   className={`${
-                    planet?.name === "saturn" ? "-mt-32" : "-mt-16"
+                    params?.planet === "saturn" ? "-mt-36" : "-mt-16"
                   }`}
-                  priority={true}
+                  priority
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
                 />
               </div>
             )}
